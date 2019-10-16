@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.img-thumbnail {
+  height: 280px;
+  width: 280px;
+}
+
+/* Navbar Style */
+.current {
+  color: #ff00ff !important;
+  font-family: 'Merienda', cursive;
+  font-weight: bold;
+  border-bottom: 2px solid #ff00ff;
+}
+
+.my-link {
+  color: #ffffff !important;
+  font-family: 'Merienda', cursive;
+}
+
+.my-link:hover {
+  font-weight: bold;
+}
+
+#home {
+  background: url('./dist/img/img1.jpg');
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#home::after {
+  content: '';
+  background-color: #000000;
+  position: absolute;
+  opacity: 0.65;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.home-content {
+  position: absolute;
+  top: 30%;
+  z-index: 3;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 2.5rem;
+}
+
+.first-alpha {
+  font-size: 4.5rem;
+  color: #ff00ff;
+}
+
+.git {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.git:hover {
+  font-size: 3.2em;
+  box-shadow: 0px 0px 5px 3px rgba(96, 96, 96, 0.75);
+}
+
+.fa-linkedin:hover {
+  font-size: 3.2em;
+  border-radius: 10%;
+  box-shadow: 0px 0px 5px 3px rgba(96, 96, 96, 0.75);
+}
+
+/* About Me */
+body.about {
+  background-image: linear-gradient(#000000 70%, #191970);
+  background-attachment: fixed;
+}
+
+.about-head {
+  color: #ff00ff;
+  font-family: 'Merienda', cursive;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-detail {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.col-md-4 {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Projects */
+body.projects {
+  background: black;
+}
+
+.project-head {
+  color: #ff00ff;
+  font-family: 'Merienda', cursive;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.card-header {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.card-img-top {
+  box-shadow: 0px 0px 5px -3px rgba(0, 0, 0, 1);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 5px 3px rgba(255, 193, 7, 1);
+}
+
+/* Contact */
+body.contact {
+  background: url('./dist/img/img7.jpg');
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+body.contact::before {
+  content: '';
+  background-color: #000000;
+  position: absolute;
+  opacity: 0.85;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.contact-head {
+  color: #ff00ff;
+  font-family: 'Merienda', cursive;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 5%;
+}
+
+.contact-me {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  top: 80%;
+}
+
+.email {
+  border: 0.5px solid #0000ff;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.75);
+}
+
+.phone {
+  border: 0.5px solid #0000ff;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(128, 128, 128, 0.75);
+}
+
+.fa-instagram:hover {
+  font-size: 2.1em;
+  border-radius: 25%;
+  box-shadow: 0px 0px 5px 3px rgba(96, 96, 96, 0.75);
+}
+
+.fa-facebook:hover {
+  font-size: 2.1em;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px rgba(96, 96, 96, 0.75);
+}
+
+/* For small devices */
+@media screen and (max-width: 768px) {
+  .home-content {
+    top: 36%;
+  }
+
+  .contact-me {
+    font-size: 1rem;
+  }
+
+  .img-thumbnail {
+    height: 200px;
+    width: 200px;
+  }
+}

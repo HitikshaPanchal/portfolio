@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap 4 Link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS style link -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Font Style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
+      crossorigin="anonymous"
+    />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body class="projects">
+    <section id="my-projects">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand my-sign" href="./index.html">
+          <img src="./dist/img/logo2.png" height="60" width="60" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link my-link" href="./index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link my-link" href="./about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link current" href="./projects.html"
+                >Projects <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link my-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <h3 class="project-head">
+        Check out some of my projects...
+      </h3>
+
+      <div class="container">
+        <div class="card-deck mb-3">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mt-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark">Contact Directory App</div>
+                <a
+                  href="https://rocky-thicket-33616.herokuapp.com/login"
+                  target="_blank"
+                >
+                  <img
+                    src="./dist/img/contact-directory-project.PNG"
+                    class="card-img-top mt-3 rounded img-thumbnail mx-auto d-block"
+                    alt="project1"
+                  />
+                </a>
+                <div class="card-body">
+                  <a
+                    href="https://rocky-thicket-33616.herokuapp.com/login"
+                    target="_blank"
+                    class="btn btn-warning btn-block"
+                    ><i class="fas fa-external-link-alt"></i> Open App</a
+                  >
+                  <a
+                    href="https://github.com/HitikshaPanchal/Contact-directory-app"
+                    target="_blank"
+                    class="btn btn-dark btn-block"
+                    ><i class="fab fa-github"></i> Github</a
+                  >
+                  <a
+                    class="btn btn-outline-primary btn-block"
+                    data-toggle="collapse"
+                    href="#collapseCard1"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseCard1"
+                    ><i class="fas fa-eye"></i> Project Detail</a
+                  >
+                  <div class="collapse" id="collapseCard1">
+                    <div class="card card-body text-left">
+                      <p>
+                        A full-stack app to save all your contacts online and
+                        secure.
+                      </p>
+                      <h6>Technologies used:</h6>
+                      <ul>
+                        <li>React.js (Hooks, effects, contextApi)</li>
+                        <li>JSX, CSS3</li>
+                        <li>Express.js</li>
+                        <li>jsonWebToken</li>
+                        <li>MongoDB, Mongoose</li>
+                        <li>Heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mt-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark">Github User Finder App</div>
+                <a href="https://usersearch1111.netlify.com/" target="_blank">
+                  <img
+                    src="./dist/img/github-finder-project.PNG"
+                    class="card-img-top mt-3 rounded img-thumbnail mx-auto d-block"
+                    alt="project2"
+                  />
+                </a>
+                <div class="card-body ">
+                  <a
+                    href="https://usersearch1111.netlify.com/"
+                    class="btn btn-warning btn-block"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i> Open App</a
+                  >
+                  <a
+                    href="https://github.com/HitikshaPanchal/user-search-app"
+                    class="btn btn-dark btn-block"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> Github
+                  </a>
+                  <a
+                    class="btn btn-outline-primary btn-block"
+                    data-toggle="collapse"
+                    href="#collapseCard2"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseCard2"
+                    ><i class="fas fa-eye"></i> Project Detail</a
+                  >
+                  <div class="collapse" id="collapseCard2">
+                    <div class="card card-body text-left">
+                      <p>
+                        It is a Github user finder App.
+                      </p>
+                      <h6>Technologies used:</h6>
+                      <ul>
+                        <li>React.js (Hooks, effects, contextApi)</li>
+                        <li>JSX, CSS3</li>
+                        <li>Netlify</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mt-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark">Random Quote Machine</div>
+                <a
+                  href="https://random-quote-machine-reactjs.herokuapp.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="./dist/img/quote-project.PNG"
+                    class="card-img-top mt-3 rounded img-thumbnail mx-auto d-block"
+                    alt="project3"
+                  />
+                </a>
+                <div class="card-body">
+                  <a
+                    href="https://random-quote-machine-reactjs.herokuapp.com/"
+                    class="btn btn-warning btn-block"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i> Open App</a
+                  >
+                  <a
+                    href="https://github.com/HitikshaPanchal/random-quote-machine"
+                    class="btn btn-dark btn-block"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> Github
+                  </a>
+                  <a
+                    class="btn btn-outline-primary btn-block"
+                    data-toggle="collapse"
+                    href="#collapseCard3"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseCard3"
+                    ><i class="fas fa-eye"></i> Project Detail</a
+                  >
+                  <div class="collapse" id="collapseCard3">
+                    <div class="card card-body text-left">
+                      <p>
+                        It gives a new random quotes when user press the button.
+                        User can also tweet particular quote.
+                      </p>
+                      <h6>Technologies used:</h6>
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>CSS3</li>
+                        <li>Heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mt-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark">Javascript Calculator</div>
+                <a
+                  href="https://javascript-calculator-reactjs.herokuapp.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="./dist/img/calculator-project.PNG"
+                    class="card-img-top mt-3 rounded img-thumbnail mx-auto d-block"
+                    alt="project3"
+                  />
+                </a>
+                <div class="card-body">
+                  <a
+                    href="https://javascript-calculator-reactjs.herokuapp.com/"
+                    class="btn btn-warning btn-block"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i> Open App</a
+                  >
+                  <a
+                    href="https://github.com/HitikshaPanchal/javascript-calculator"
+                    class="btn btn-dark btn-block"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> Github
+                  </a>
+                  <a
+                    class="btn btn-outline-primary btn-block"
+                    data-toggle="collapse"
+                    href="#collapseCard4"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseCard4"
+                    ><i class="fas fa-eye"></i> Project Detail</a
+                  >
+                  <div class="collapse" id="collapseCard4">
+                    <div class="card card-body text-left">
+                      <p>
+                        A javascript calculator
+                      </p>
+                      <h6>Technologies used:</h6>
+                      <ul>
+                        <li>JavaScript</li>
+                        <li>React.js (components)</li>
+                        <li>JSX, CSS3</li>
+                        <li>Heroku</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mt-4">
+              <div class="card text-center">
+                <div class="card-header bg-dark">Tech Logger App</div>
+                <a
+                  href="https://github.com/HitikshaPanchal/Tech-logger-app"
+                  target="_blank"
+                >
+                  <img
+                    src="./dist/img/tech-logger-project.PNG"
+                    class="card-img-top mt-3 rounded img-thumbnail mx-auto d-block"
+                    alt="project3"
+                  />
+                </a>
+                <div class="card-body">
+                  <a
+                    href="https://github.com/HitikshaPanchal/Tech-logger-app"
+                    class="btn btn-warning btn-block"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt"></i> Open App</a
+                  >
+                  <a
+                    href="https://github.com/HitikshaPanchal/Tech-logger-app"
+                    class="btn btn-dark btn-block"
+                    target="_blank"
+                    ><i class="fab fa-github"></i> Github
+                  </a>
+                  <a
+                    class="btn btn-outline-primary btn-block"
+                    data-toggle="collapse"
+                    href="#collapseCard5"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseCard5"
+                    ><i class="fas fa-eye"></i> Project Detail</a
+                  >
+                  <div class="collapse" id="collapseCard5">
+                    <div class="card card-body text-left">
+                      <p>
+                      A logger app for technicians to create and update logs.
+                      </p>
+                      <h6>Technologies used:</h6>
+                      <ul>
+                        <li>React.js</li>
+                        <li>Redux</li>
+                        <li>json server</li>
+                        <li>JSX, CSS3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
